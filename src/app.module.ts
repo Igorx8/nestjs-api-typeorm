@@ -13,7 +13,7 @@ import { CustomerModule } from './customer/customer.module';
     password: 'docker',
     database: 'postgres',
     autoLoadEntities: true,
-    synchronize: true
+    synchronize: true //not recomended on production
   })],
   controllers: [AppController],
   providers: [AppService],
