@@ -1,6 +1,4 @@
 import { IsEmail, IsString, Length } from "class-validator";
-import { CreateDateColumn, UpdateDateColumn } from "typeorm";
-
 export class CreateCustomerDto {
   @Length(5, 50)
   @IsString()
@@ -12,10 +10,4 @@ export class CreateCustomerDto {
   @Length(10, 11)
   @IsString()
   readonly phone: string;
-
-  @CreateDateColumn()
-  readonly createdAt: Date;
-
-  @UpdateDateColumn()
-  readonly updatedAt: Date;
 }
